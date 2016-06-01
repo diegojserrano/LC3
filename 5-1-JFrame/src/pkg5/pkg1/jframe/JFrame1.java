@@ -2,6 +2,7 @@ package pkg5.pkg1.jframe;
 
 import java.awt.BorderLayout;
 import java.awt.Button;
+import java.awt.FlowLayout;
 import javax.swing.*;
 
 public class JFrame1 {
@@ -11,7 +12,7 @@ public class JFrame1 {
         JFrame ventana = new JFrame("Título de la ventana");
         ventana.setSize(300, 200);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        ventana.setLayout(new BoxLayout(ventana.getContentPane(), BoxLayout.X_AXIS));
+        ventana.setLayout(new FlowLayout());
         
         JButton boton1 = new JButton("Boton 1");
         ventana.add(boton1);
